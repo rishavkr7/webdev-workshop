@@ -28,7 +28,7 @@ Before we implement the logic of our game, we should express the steps in our lo
 
 ## Part 3 - Javascript (Step 2 - Functions)
 
-Once we have written pseudocode in the structure of events and actions, the first step of coding the steps in JavaScript is to write high-level functions for all the major events and action steps. Switch to the branch **workshop/part3-javascript-step2-functional** and follow the instructions in the README.
+Once we have written pseudocode in the structure of events and actions, the first step of coding the steps in JavaScript is to write high-level functions for all the major events and action steps. Switch to the branch **workshop/part3-javascript-step2-functions** and follow the instructions in the README.
 
 ## Part 3 - Javascript (Step 3 - Implementation)
 
