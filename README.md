@@ -2,33 +2,17 @@
 
 This repository contains source code for a web development workshop where we learn Git, HTML, CSS and Javascript while building a Hollywood-themed quiz game [like this](https://hollywood-quiz.renzil.com).
 
-Before you begin, please fork this repository into your GitHub account by clicking the Fork button in GitHub (usually on the top right).
+Before you begin, please [sign up for a GitHub account](https://github.com/signup) and then fork this repository into your GitHub account by clicking the Fork button in GitHub (usually on the top right).
 
-You must then choose an editor for coding. There are many choices that will work, but if you're new I highly recommend using the cloud-based IDE [Gitpod](https://gitpod.io).
-
-Gitpod is basically a web version of the popular Visual Studio Code with a generous free tier. The best part is that it already has a GitHub integration, a Linux terminal, node, python and numerous other development tools already installed so you don't need to waste any time with installation or configuration.
-
-Once you signup for Gitpod with your GitHub credentials, make sure you have checked the permissions "user:email" and "public_repo" in https://gitpod.io/integrations -> Git Providers -> GitHub -> Edit Permissions.
-
-<a href="https://www.loom.com/share/1249c77745654b0ba46e83cfb8481eff">
-  <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1249c77745654b0ba46e83cfb8481eff-with-play.gif">
-</a>
-
-Then you can open this workshop in a Gitpod workspace by clicking the New Workspace button. Delete the default '.gitpod.yml' file that gets created as it is not necessary.
-
-<a href="https://www.loom.com/share/42a3c3b2e66146bba8fd3499cc440cf5">
-  <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/42a3c3b2e66146bba8fd3499cc440cf5-with-play.gif">
-</a>
-
-The web development workshop is broken down into 3 parts with instructions and starter code contained in a git branch. For each part you need to switch to the branch in Gitpod and follow the instructions in the README of that branch.
+This web development workshop is broken down into 4 parts for Git, HTML, CSS and JavaScript. The JavaScript part is further split into 3 sub-parts. Each part of the workshop has a separate branch with some code and instructions in the README. You need to switch to the appropriate branch in GitHub and your code editor, and then follow the instructions in the README of that branch.
 
 At any point of time if you want to return back to this document, switch to the "main" branch.
 
-The below video shows you how to switch a branch and create a new branch from it using Gitpod. Selecting a branch with the prefix "origin/" will automatically select the local branch without "origin/" for you.
+Below you will find an overview of the different parts of the workshop along with some useful resources at the end. You can start from the beginning of the workshop by switching to the branch **workshop/part0-git** and following the instructions in the README.
 
-<a href="https://www.loom.com/share/19b7d5dbe9ff423ab5d8a3362ddd20af">
-  <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/19b7d5dbe9ff423ab5d8a3362ddd20af-with-play.gif">
-</a>
+## Part 0 - Git
+
+Learn the basics of Git and GitHub in this part. We will also setup a code editor and learn how to make some changes to our source code. Switch to the branch **workshop/part0-git** and follow the instructions in the README.
 
 ## Part 1 - HTML
 
@@ -38,9 +22,17 @@ Learn the basics of HTML in this part. This is where you need to start once you 
 
 Learn the basics of adding CSS styles to your HTML document in this part. Switch to the branch **workshop/part2-css** and follow the instructions in the README.
 
-## Part 3 - Javascript
+## Part 3 - Javascript (Step 1 - Pseudocode)
 
-Learn how to react to events and write custom logic using Javascript in this part. Switch to the branch **workshop/part3-javascript** and follow the instructions in the README.
+Before we implement the logic of our game, we should express the steps in our logic in a simple language like English. We call this writing pseudocode and in this part of the workshop you will learn how to write pseudocode. Switch to the branch **workshop/part3-javascript-step1-pseudocode** and follow the instructions in the README.
+
+## Part 3 - Javascript (Step 2 - Functions)
+
+Once we have written pseudocode in the structure of events and actions, the first step of coding the steps in JavaScript is to write high-level functions for all the major events and action steps. Switch to the branch **workshop/part3-javascript-step2-functional** and follow the instructions in the README.
+
+## Part 3 - Javascript (Step 3 - Implementation)
+
+Once we have the high-level functions in place, we need to implement the functions corresponding to each action step. Switch to the branch **workshop/part3-javascript-step3-implementation** and follow the instructions in the README.
 
 ## Completed project
 
@@ -62,11 +54,11 @@ Then click on Remote Explorer button, and click on the globe icon for port 3000 
 
 ## Deployment
 
-There are many easy ways to deploy a simple static website like this that doesn't require any server. The easiest would be to use GitHub Pages.
+There are many easy ways to deploy a simple static website like this that doesn't require you to host your own server. The easiest would be to use GitHub Pages.
 
 To enable GitHub pages deployments for this repository,
 - Click on the Settings button for this repository
-- Click on the Pages button
+- Click on the Pages tab on the left
 - Select the branch you want to deploy and click Save
 - Check the 'Enforce HTTPS' checkbox to prevent browsers from showing a security warning while visiting your site
 <a href="https://www.loom.com/share/f0bd94777a6c4171860f975054379c4f">
