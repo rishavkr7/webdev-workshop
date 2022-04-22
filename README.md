@@ -55,4 +55,4 @@ The list of distinct events which happen in our game are:
 
 Thinking about the logic as pseudocode upfront makes things clear when you actually sit down to code. In the next part of the workshop we will re-write our pseudocode in the form of JavaScript functions.
 
-Push your changes to a new branch, then switch to the branch **workshop/part3-javascript-step2-functional** for the next part of the workshop.
+Push your changes to a new branch, then switch to the branch **workshop/part3-javascript-step2-functions** for the next part of the workshop.
