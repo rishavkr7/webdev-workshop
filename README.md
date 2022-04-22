@@ -1,94 +1,57 @@
 # Renzil's Web Development Workshop
 
-This repository contains source code for a web development workshop where we learn Git, HTML, CSS and Javascript while building a Hollywood-themed quiz game [like this](https://hollywood-quiz.renzil.com).
+The first step when you start coding is to choose an editor for coding. There are many choices that will work, but if you're new I highly recommend using the cloud-based IDE [Gitpod](https://gitpod.io).
 
-Before you begin, please fork this repository into your GitHub account by clicking the Fork button in GitHub (usually on the top right).
+Gitpod is basically a web version of the popular Visual Studio Code. The best part is that it already has all the development tools already installed so you don't need to waste any time with installation or configuration.
 
-You must then choose an editor for coding. There are many choices that will work, but if you're new I highly recommend using the cloud-based IDE [Gitpod](https://gitpod.io).
-
-Gitpod is basically a web version of the popular Visual Studio Code with a generous free tier. The best part is that it already has a GitHub integration, a Linux terminal, node, python and numerous other development tools already installed so you don't need to waste any time with installation or configuration.
-
-Once you signup for Gitpod with your GitHub credentials, make sure you have checked the permissions "user:email" and "public_repo" in https://gitpod.io/integrations -> Git Providers -> GitHub -> Edit Permissions.
+> Once you signup for Gitpod with your GitHub credentials, make sure you have checked the permissions "user:email" and "public_repo" in https://gitpod.io/integrations -> Git Providers -> GitHub -> Edit Permissions.
 
 <a href="https://www.loom.com/share/1249c77745654b0ba46e83cfb8481eff">
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1249c77745654b0ba46e83cfb8481eff-with-play.gif">
 </a>
 
-Then you can open this workshop in a Gitpod workspace by clicking the New Workspace button. Delete the default '.gitpod.yml' file that gets created as it is not necessary.
+Then you can open this workshop in a Gitpod workspace by clicking the New Workspace button.
 
 <a href="https://www.loom.com/share/42a3c3b2e66146bba8fd3499cc440cf5">
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/42a3c3b2e66146bba8fd3499cc440cf5-with-play.gif">
 </a>
 
-The web development workshop is broken down into 3 parts with instructions and starter code contained in a git branch. For each part you need to switch to the branch in Gitpod and follow the instructions in the README of that branch.
-
-At any point of time if you want to return back to this document, switch to the "main" branch.
-
-The below video shows you how to switch a branch and create a new branch from it using Gitpod. Selecting a branch with the prefix "origin/" will automatically select the local branch without "origin/" for you.
+Switch to the branch origin/workshop/part0-git in Gitpod. Here is a video on how to switch branches.
 
 <a href="https://www.loom.com/share/19b7d5dbe9ff423ab5d8a3362ddd20af">
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/19b7d5dbe9ff423ab5d8a3362ddd20af-with-play.gif">
 </a>
 
-## Part 1 - HTML
 
-Learn the basics of HTML in this part. This is where you need to start once you have Gitpod setup. Switch to the branch **workshop/part1-html** and follow the instructions in the README.
+## Introduction to Git
 
-## Part 2 - CSS
+Git is essentially a tool to manage frequent changes to a collection of documents, which is typical when you're developing an app and you have to make changes to source code.
 
-Learn the basics of adding CSS styles to your HTML document in this part. Switch to the branch **workshop/part2-css** and follow the instructions in the README.
+Why do we need git? One major reason is because changes to source code often break the app by introducing bugs. So we want to be able to revert back to a previous version of the code, or at least see what specific changes were recently introduced. Another reason is multiple people can work on a project at the same time with git as it has mechanisms to manage different versions of source code on different computers.
 
-## Part 3 - Javascript
+Your project and the documents git tracks is called a git repository. A change (addition, updation, deletion, renaming, etc.) to a git repository can be tracked by making a git commit. You can choose to have some files untracked by git in your source code folder.
 
-Learn how to react to events and write custom logic using Javascript in this part. Switch to the branch **workshop/part3-javascript** and follow the instructions in the README.
+Before you commit, git allows you to stage your changes to the git index. This is a place for you to preview what you are changing before you actually commit it to your git repository.
 
-## Completed project
+Once you make one or more commits to your git repository on your machine, you can 'push' your changes to a remote repository on another machine. GitHub is an example of a remote git repository. Other users can 'clone' your remote repository onto their machines, make some commits on their local repository, then push their changes back to the remote repository. Your repository can have multiple remotes.
 
-The completed project is available under the branch **workshop/completed**.
+Git enables you to manage different versions of your source code in the form of branches. You can create a branch from any commit in the git commit history tree. You can also merge all commits made to one branch into another branch. Branches can also be pushed to a remote repository.
 
-Make sure you replace the TENOR_API_KEY in js/game.js with your own free [API key from Tenor](https://tenor.com/developer/keyregistration) otherwise the gif images won't update.
+## Workshop steps
 
-## Build
+1. Setup gitpod and open this repository in gitpod
+2. Switch to branch origin/workshop/part0-git in gitpod
+3. Create a new branch from workshop/part0-git. You can name it anything, for example YOUR_GITHUB_USERNAME/git.
+4. Make some change to the gitpod.yml file (it doesn't matter what you change)
+5. Switch to Source Control view and discard your change
+6. Make a change to the README.md file (it doesn't matter what you change)
+7. Switch to Source Control view and commit your change
+8. From Source Control view push your change to remote
+9. See your new branch and README on GitHub
 
-To preview the web site in a browser using Gitpod, you need to run the following command in the Gitpod terminal,
+## Next steps
 
-```npx browser-sync -w```
+Try to create another branch and commit some more changes to the README file. Then try to merge the changes in this branch into the other branch you created.
 
-Then click on Remote Explorer button, and click on the globe icon for port 3000 to open the website preview in a new browser window.
-
-<a href="https://www.loom.com/share/7fc854ac6ec645d5a740e3a2986d9dd1">
-  <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7fc854ac6ec645d5a740e3a2986d9dd1-with-play.gif">
-</a>
-
-## Deployment
-
-There are many easy ways to deploy a simple static website like this that doesn't require any server. The easiest would be to use GitHub Pages.
-
-To enable GitHub pages deployments for this repository,
-- Click on the Settings button for this repository
-- Click on the Pages button
-- Select the branch you want to deploy and click Save
-- Check the 'Enforce HTTPS' checkbox to prevent browsers from showing a security warning while visiting your site
-<a href="https://www.loom.com/share/f0bd94777a6c4171860f975054379c4f">
-  <img style="width: 300px; max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f0bd94777a6c4171860f975054379c4f-with-play.gif">
-</a>
-
-## My favourite resources
-
-[Google Search](https://google.com) for most questions which have already been answered. Prefer results from Stackoverflow.
-
-[MDN Docs](https://developer.mozilla.org/en-US/) for HTML, CSS & JS reference.
-
-[Google Fonts](https://fonts.google.com) for fonts hosted on CDN.
-
-[Remixicon](https://remixicon.com/) for icons hosted on CDN.
-
-[Pixabay](https://pixabay.com/) for free photos, music & sound effects.
-
-[Unsplash](https://unsplash.com), [Pexels](https://pexels.com) for free stock photos.
-
-[Namecheap](https://namecheap.com) to buy domains.
-
-[Flexbox Froggy](https://flexboxfroggy.com/) to learn CSS flex in a fun way.
-
-[Stackoverflow](https://stackoverflow.com) to ask new questions.
+Once you are done with this part of the workshop,
+- switch to **workshop/part1-html** branch where we will learn how to start building any website
