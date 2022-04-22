@@ -39,8 +39,7 @@ Once you make one or more commits to your git repository on your machine, you ca
 
 Git enables you to manage different versions of your source code in the form of branches. You can create a branch from any commit in the git commit history tree. You can also merge all commits made to one branch into another branch. Branches can also be pushed to a remote repository.
 
-![git repository](https://drive.google.com/uc?id=15ZPGf986T2mQxiiSiKmPxbsARwOHtu44)
-![git branching](https://drive.google.com/uc?id=15ZbAjkrM1xHBHPs2OFnsgTXH9lHmPyzW)
+![git repository](https://drive.google.com/uc?id=15ZPGf986T2mQxiiSiKmPxbsARwOHtu44 | width=200) ![git branching](https://drive.google.com/uc?id=15ZbAjkrM1xHBHPs2OFnsgTXH9lHmPyzW | width=200)
 
 ## Workshop steps
 
