@@ -1,16 +1,18 @@
 # Renzil's Web Development Workshop
 
-The first step when you start coding is to choose an editor for coding. There are many choices that will work, but if you're new I highly recommend using the cloud-based IDE [Gitpod](https://gitpod.io).
+The first step when you start is to choose an integrated development environment (IDE) for coding. An IDE will usually give you a text editor, terminal, and other tools to help you write code.
 
-Gitpod is basically a web version of the popular Visual Studio Code. The best part is that it already has all the development tools already installed so you don't need to waste any time with installation or configuration.
+There are many choices that will work, but if you're new I highly recommend using the cloud-based IDE [Gitpod](https://gitpod.io).
 
-> Once you signup for Gitpod with your GitHub credentials, make sure you have checked the permissions "user:email" and "public_repo" in https://gitpod.io/integrations -> Git Providers -> GitHub -> Edit Permissions.
+Gitpod is basically a web version of the popular IDE Visual Studio Code. The best part is that it has all the development tools you need pre-installed so you don't need to waste any time with installation or configuration.
+
+> Signup for Gitpod with your GitHub credentials, then make sure you have checked the permissions "user:email" and "public_repo" in https://gitpod.io/integrations -> Git Providers -> GitHub -> Edit Permissions.
 
 <a href="https://www.loom.com/share/1249c77745654b0ba46e83cfb8481eff">
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1249c77745654b0ba46e83cfb8481eff-with-play.gif">
 </a>
 
-Then you can open this workshop in a Gitpod workspace by clicking the New Workspace button.
+You can open this workshop in a Gitpod workspace by clicking the New Workspace button.
 
 <a href="https://www.loom.com/share/42a3c3b2e66146bba8fd3499cc440cf5">
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/42a3c3b2e66146bba8fd3499cc440cf5-with-play.gif">
@@ -27,7 +29,7 @@ Switch to the branch origin/workshop/part0-git in Gitpod. Here is a video on how
 
 Git is essentially a tool to manage frequent changes to a collection of documents, which is typical when you're developing an app and you have to make changes to source code.
 
-Why do we need git? One major reason is because changes to source code often break the app by introducing bugs. So we want to be able to revert back to a previous version of the code, or at least see what specific changes were recently introduced. Another reason is multiple people can work on a project at the same time with git as it has mechanisms to manage different versions of source code on different computers.
+Why do we need git? One reason is because changes to source code often break the app by introducing bugs. So we want to be able to revert back to a previous version of the code, or at least see what specific changes were recently introduced. Another reason is that multiple people can work on a project at the same time with git as it has mechanisms to manage different versions of source code on different computers.
 
 Your project and the documents git tracks is called a git repository. A change (addition, updation, deletion, renaming, etc.) to a git repository can be tracked by making a git commit. You can choose to have some files untracked by git in your source code folder.
 
@@ -36,6 +38,9 @@ Before you commit, git allows you to stage your changes to the git index. This i
 Once you make one or more commits to your git repository on your machine, you can 'push' your changes to a remote repository on another machine. GitHub is an example of a remote git repository. Other users can 'clone' your remote repository onto their machines, make some commits on their local repository, then push their changes back to the remote repository. Your repository can have multiple remotes.
 
 Git enables you to manage different versions of your source code in the form of branches. You can create a branch from any commit in the git commit history tree. You can also merge all commits made to one branch into another branch. Branches can also be pushed to a remote repository.
+
+![git repository](https://drive.google.com/uc?id=15ZPGf986T2mQxiiSiKmPxbsARwOHtu44)
+![git branching](https://drive.google.com/uc?id=15ZbAjkrM1xHBHPs2OFnsgTXH9lHmPyzW)
 
 ## Workshop steps
 
