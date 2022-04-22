@@ -1,3 +1,4 @@
 # Adding this file only so that gitpod doesn't create it
 tasks:
+  - init:
   
