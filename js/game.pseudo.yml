@@ -4,6 +4,10 @@
     - fetch the clue image
 
 - When user clicks any answer button:
-    - check if correct answer:
-        - yes, handle "correct_answer" case
-        - no, handle "wrong_answer" case
+    - check if the answer is correct and trigger "answer is correct" or "answer is wrong" event appropriately
+
+- When answer is correct:
+    - do something
+    
+- When answer is wrong:
+    - do something
