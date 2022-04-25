@@ -4,7 +4,7 @@ This repository contains source code for a web development workshop where we lea
 
 Before you begin, please [sign up for a GitHub account](https://github.com/signup) and then fork this repository into your GitHub account by clicking the Fork button in GitHub (usually on the top right).
 
-This web development workshop is broken down into 4 parts for Git, HTML, CSS and JavaScript. The JavaScript part is further split into 3 sub-parts. Each part of the workshop has a separate branch with some code and instructions in the README. You need to switch to the appropriate branch in GitHub and your code editor, and then follow the instructions in the README of that branch.
+This web development workshop is broken down into 4 parts for Git, HTML, CSS and JavaScript. Each part of the workshop has a separate branch with some code and instructions in the README. You need to switch to the appropriate branch in GitHub and your code editor, and then follow the instructions in the README of that branch.
 
 At any point of time if you want to return back to this document, switch to the "main" branch.
 
@@ -22,17 +22,9 @@ Learn the basics of HTML in this part. This is where you need to start once you 
 
 Learn the basics of adding CSS styles to your HTML document in this part. Switch to the branch **workshop/part2-css** and follow the instructions in the README.
 
-## Part 3 - Javascript (Step 1 - Pseudocode)
+## Part 3 - Javascript
 
-Before we implement the logic of our game, we should express the steps in our logic in a simple language like English. We call this writing pseudocode and in this part of the workshop you will learn how to write pseudocode. Switch to the branch **workshop/part3-javascript-step1-pseudocode** and follow the instructions in the README.
-
-## Part 3 - Javascript (Step 2 - Functions)
-
-Once we have written pseudocode in the structure of events and actions, the first step of coding the steps in JavaScript is to write high-level functions for all the major events and action steps. Switch to the branch **workshop/part3-javascript-step2-functions** and follow the instructions in the README.
-
-## Part 3 - Javascript (Step 3 - Implementation)
-
-Once we have the high-level functions in place, we need to implement the functions corresponding to each action step. Switch to the branch **workshop/part3-javascript-step3-implementation** and follow the instructions in the README.
+In this part, we will learn how to think about our game logic and implement it using JavaScript code. Switch to the branch **workshop/part3-javascript** and follow the instructions in the README.
 
 ## Completed project
 
