@@ -53,4 +53,4 @@ Once you are done with this part of the workshop:
 - push your working branch and its changes to GitHub
 - deploy your branch to GitHub pages
 
-You can switch to **workshop/completed** branch anytime to view the complete implementation of the game.
+You can switch to **workshop/completed** branch anytime to view the complete implementation of the game and closing comments from me.
