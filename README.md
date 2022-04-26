@@ -57,5 +57,4 @@ Git enables you to manage different versions of your source code in the form of 
 
 Try to create another branch and commit some more changes to the README file. Then try to merge the changes in this branch into the other branch you created.
 
-Once you are done with this part of the workshop,
-- switch to **workshop/part1-html** branch where we will learn how to start building any website
+Once you are done with this part of the workshop, switch to **workshop/part1-html** branch where we will learn how to start building any website.
