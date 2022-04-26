@@ -1,8 +1,8 @@
 # Part 3 - Javascript
 
-JavaScript is one of the most popular programming languages as it is the language of the web. All modern web browsers support JavaScript and web developers write JavaScript code to add different behaviours to their website.
+Check out our website in the browser preview - it looks pretty good now! But the question doesn't change and the buttons don't do anything. To implement the webpage logic, you need to use the programming language of the web and one of the most popular programming languages - Javascript.
 
-But due to its popularity, JavaScript is also increasingly being used outside the web browser. For an introduction to JavaScript [please visit this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). We will be using many of the basic JavaScript constructs like functions, variables, control flow, loops, expressions and objects. Additionally we will use promises to interact with external web services.
+For an introduction to JavaScript [please visit this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). We will be using many of the basic JavaScript constructs like functions, variables, control flow, loops, expressions and objects. Additionally we will use promises to interact with external web services.
 
 JavaScript enables our websites to communicate with other web services through [APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction). Some of these APIs are related to manipulating the current web page and are provided by the user's web browser. Other APIs are related to data stored outside our web site and are provided by external web servers. Below I have explained the APIs we need to build our game.
 
