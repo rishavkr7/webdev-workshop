@@ -1,58 +1,55 @@
-# Part 3 - Javascript (Step 1 - Pseudocode)
+# Part 3 - Javascript
 
-I usually start coding the logic of any project from scratch by writing down pseudocode. Pseudocode basically captures what (logic) we are planning to implement, without worrying about the how (language).
+JavaScript is one of the most popular programming languages as it is the language of the web. All modern web browsers support JavaScript and web developers write JavaScript code to add different behaviours to their website.
 
-A simple way to write pseudocode is in the form of "When event X happens, do steps A, B, C ...". For example
+But due to its popularity, JavaScript is also increasingly being used outside the web browser. For an introduction to JavaScript [please visit this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). We will be using many of the basic JavaScript constructs like functions, variables, control flow, loops, expressions and objects. Additionally we will use promises to interact with external web services.
 
-```
-- When the question loads:
-    - update the question text
-    - update the answer button options
-    - fetch the clue image
-```
+JavaScript enables our websites to communicate with other web services through [APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction). Some of these APIs are related to manipulating the current web page and are provided by the user's web browser. Other APIs are related to data stored outside our web site and are provided by external web servers. Below I have explained the APIs we need to build our game.
 
-You will notice that some steps may generate more events in the future. For example, "fetch the clue image" will generate the event "when the clue image loads".
+The first API we will be working with is the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) which is provided by the browser. The DOM API is basically the way we use JavaScript to handle events and manipulate the web page. For example the DOM API has a way to listen for button click events which is useful when responding to the user clicking any of the answer button options and triggering the next steps. The DOM API also lets you update the text and other attributes of the HTML elements, which allows us to update our question text and answer button options everytime we fetch a new question.
 
-Sometimes you may encounter a condition step. For example,
+In addition to the DOM API, the data for this game is sourced from 2 external APIs:
 
-```
-- When the user clicks an answer button:
-    - check if the answer is correct
-        - if yes, do something
-        - if no, do something
-```
+1. The questions data comes from [Open Trivia DB](https://opentdb.com/). Open Trivia DB has an API which gives you a list of questions along with their correct and wrong answers. You can play around with this API [here](https://opentdb.com/api_config.php). Just click the button to generate an API url then open it in a new browser tab. You should see the results of the API as a JSON response. We will talk a bit more about JSON later.
+2. The image clue for the question comes from the [Tenor GIF API](https://tenor.com/gifapi). Tenor is the same service that supplies GIFs on WhatsApp. They have an API where you can request GIFs for a given query string. I haved used the correct answer to the current question fetched from Open Trivia DB as the query to the Tenor API, and it gives mostly great results. You will need an API key to use the Tenor API and you can [request for one here](https://tenor.com/developer/keyregistration). Once you have an API key, you can test the Tenor API by opening [this url](https://g.tenor.com/v1/search?q=hello&key=) in your browser and replacing the value of the `key` parameter with your API key and the value of the `q` parameter with any other string you want to search. The results are again in JSON.
 
-In these cases, it becomes easy to write code later if you trigger new events for each conditional case. For example in the above case,
+Before I start coding any project in a programming language, I like to write down my thoughts in a simple language without any strict rules. This is called pseudocode and it basically captures what (logic) we are planning to implement, without worrying about how we implement it (the programming language).
+
+A simple way to write pseudocode is in the form of "When event X happens, do steps A, B, ...". For example
 
 ```
-- When the user clicks an answer button:
-    - check if the answer is correct and trigger "answer is correct" or "answer is wrong" event appropriately
-
-- When answer is correct:
-    - do something
-    
-- When answer is wrong:
-    - do something
+- When the page loads:
+    - do step A
+    - do step B
+    - do step ...
 ```
 
-Think of all the event triggers for your app. Any user interaction that requires some custom logic should be an event trigger. Some event triggers can come without the user doing any action. For example when the page loads for the first time, we want to fetch the first question. Or when the question finishes loading, we want to update the question text and answer options and fetch an image for the clue.
+I have added a file js/game.pseudo.yml which contains a placeholder for the pseudocode. To begin with, let's write the pseudocode steps for when the page loads. Think of all the APIs we need to call and what needs to be done when the page loads and write it down. Don't worry about the details like "how to call the API", just write down your high-level thoughts in simple words.
 
-You will probably miss a lot of functionality when you write pseudocode down for the first time for any app, especially when you don't know how the underlying technology works. You may only realise this when you start implementing the actual code.
+Next let's start converting our pseudocode into JavaScript. I have already created a file js/game.js which is linked to our game.html page. This contains a function that prints a message to the console when the game.html page loads. Let us implement this stub function by adding all the steps from your pseudocode. For each step create a distinct function and call it in the page load function. This is how I would map my high-level thoughts into a programming language.
 
-There is also no standard way of writing pseudocode. You can use any language you want. The key here is to express the steps behind the behavior of the app, without having to worry about how those steps should be written in the final programming language.
+Lastly for each step that has a distinct function, you just need to implement the function using JavaScript, DOM APIs, external APIs, etc. I have shared some hints below.
 
-In this part of the workshop, you need to write (in your own words) the pseudocode for the behavior of our game.html page in the above pseudocode structure.
+At the end of this part of the workshop, we should be seeing a new question with its answer options and the clue image when we load your game page.
 
-The list of distinct events which happen in our game are:
-- when the web page loads
-- when a question loads
-- when the image loads
-- when user clicks any answer button
-- when "correct answer" case
-- when "wrong answer" case
+## Workshop steps
+
+0. Create a new branch from workshop/part3-javascript
+1. In js/game.pseudo.yml, complete the pseudocode steps for "when the page loads". (HINT: we need to see the first question and clue image)
+2. In js/game.js, create a new function for each step in your pseudocode. Call these functions from "on_page_load".
+3. Implement the functions for the distinct steps when the page loads. (HINT: you can use the following DOM APIs - fetch, getElementById, Element.innerText)
 
 ## Next steps
 
-Thinking about the logic as pseudocode upfront makes things clear when you actually sit down to code. In the next part of the workshop we will re-write our pseudocode in the form of JavaScript functions.
+Always start by writing down what you are planning to implement in some form of pseudocode. This does not require you to learn any language - just use whatever you know to express how you think your app should behave.
 
-Push your changes to a new branch, then switch to the branch **workshop/part3-javascript-step2-functions** for the next part of the workshop.
+Once you do this, how you are planning to implement the pseudocode is just a matter of knowing the syntax and semantics of the language. A good way to start coding is to write your pseudocode in the form of high-level functions first. Then implement each of the functions using the language constructs and APIs provided.
+
+Using this approach you can complete the rest of the game. You will need to think about what should happen when the player clicks an answer button and break it down into distinct steps. There will also be some state you will need to track using variables, as the player cannot keep answering wrong without consequences.
+
+Once you are done with this part of the workshop:
+
+commit your changes to your working branch
+push your working branch and its changes to GitHub
+
+You can switch to **workshop/completed** branch anytime to view the complete implementation of the game.
