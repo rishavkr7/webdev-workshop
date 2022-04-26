@@ -1,6 +1,6 @@
 # Part 3 - Javascript
 
-Check out our website in the browser preview - it looks pretty good now! But the question doesn't change and the buttons don't do anything. To implement the webpage logic, you need to use the programming language of the web and one of the most popular programming languages - Javascript.
+Check out our website in the browser preview - it looks pretty good now! But the question text and answer button options don't change and the buttons don't do anything yet. To implement the webpage logic, you need to use the programming language of the web and one of the most popular programming languages - Javascript.
 
 For an introduction to JavaScript [please visit this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). We will be using many of the basic JavaScript constructs like functions, variables, control flow, loops, expressions and objects. Additionally we will use promises to interact with external web services.
 
