@@ -72,6 +72,8 @@ To enable GitHub pages deployments for this repository,
 
 [MDN Docs](https://developer.mozilla.org/en-US/) for HTML, CSS & JS reference.
 
+[JS Fiddle](https://jsfiddle.net/) to quickly play around with HTML, CSS & JS.
+
 [Google Fonts](https://fonts.google.com) for fonts hosted on CDN.
 
 [Remixicon](https://remixicon.com/) for icons hosted on CDN.
