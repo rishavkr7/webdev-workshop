@@ -44,6 +44,15 @@ Then click on Remote Explorer button, and click on the globe icon for port 3000 
   <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7fc854ac6ec645d5a740e3a2986d9dd1-with-play.gif">
 </a>
 
+## Commit & Push code
+
+Here is a video on how to commit and push your changes:
+
+<a href="https://www.loom.com/share/f959cff6ab1a4ca1bdf7f0046648f470">
+  <img style="width:300px;max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f959cff6ab1a4ca1bdf7f0046648f470-with-play.gif">
+</a>
+
+
 ## Deployment
 
 There are many easy ways to deploy a simple static website like this that doesn't require you to host your own server. The easiest would be to use GitHub Pages.
