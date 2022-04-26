@@ -37,7 +37,7 @@ At the end of this part of the workshop, we should be seeing a new question with
 0. Create a new branch from workshop/part3-javascript
 1. In js/game.pseudo.yml, complete the pseudocode steps for "when the page loads". (HINT: we need to see the first question and clue image)
 2. In js/game.js, create a new function for each step in your pseudocode. Call these functions from "on_page_load".
-3. Implement the functions for the distinct steps when the page loads. (HINT: you can use the following DOM APIs - fetch, getElementById, Element.innerText)
+3. Implement the functions for the distinct steps when the page loads. (HINT: refer to branch **workshop/part3-javascript-hints** for hints to do the implementation)
 
 ## Next steps
 
