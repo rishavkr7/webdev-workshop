@@ -32,7 +32,7 @@ The completed project is available under the branch **workshop/completed**.
 
 Make sure you replace the TENOR_API_KEY in js/game.js with your own free [API key from Tenor](https://tenor.com/developer/keyregistration) otherwise the gif images won't update.
 
-## Build
+## Build & Test
 
 To preview the web site in a browser using Gitpod, you need to run the following command in the Gitpod terminal,
 
