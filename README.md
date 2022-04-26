@@ -45,11 +45,12 @@ Always start by writing down what you are planning to implement in some form of 
 
 Once you do this, how you are planning to implement the pseudocode is just a matter of knowing the syntax and semantics of the language. A good way to start coding is to write your pseudocode in the form of high-level functions first. Then implement each of the functions using the language constructs and APIs provided.
 
-Using this approach you can complete the rest of the game. You will need to think about what should happen when the player clicks an answer button and break it down into distinct steps. There will also be some state you will need to track using variables, as the player cannot keep answering wrong without consequences.
+Using this approach you can complete the rest of the game. You will need to think about what should happen when the player clicks an answer button and break it down into distinct steps. There will also be some state you will need to track using variables, as in my game the player cannot go on making wrong answers and the game does get over at some point.
 
 Once you are done with this part of the workshop:
 
-commit your changes to your working branch
-push your working branch and its changes to GitHub
+- commit your changes to your working branch
+- push your working branch and its changes to GitHub
+- deploy your branch to GitHub pages
 
 You can switch to **workshop/completed** branch anytime to view the complete implementation of the game.
